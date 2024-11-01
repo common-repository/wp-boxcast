@@ -1,0 +1,223 @@
+
+ul.playlist {
+ font:65% normal verdana,arial,tahoma,"sans serif";
+ list-style-type:none;
+}
+
+ul.playlist li {
+ margin-left:0px;
+ list-style-position:inside;
+ position:relative;
+ display:block;
+ width:auto;
+ font-size:2em;
+ color:#666;
+ padding:1em 1em 1em 1em;
+ border:none;
+ letter-spacing:-1px; /* ZOMG WEB X.0. ;) */
+ background:#f9f9f9;
+ -webkit-transition-property: hover;
+ -webkit-transition: background-color 0.15s ease-in-out;
+}
+
+ul.playlist li a {
+ display:block;
+ text-decoration:none;
+ font-weight:normal;
+ color:#000;
+ font-size:150%;
+ outline:none;
+ position:relative;
+ z-index:2;
+}
+
+ul.playlist li.sm2_playing,
+ul.playlist li.sm2_paused,
+ul.playlist li.sm2_playing a {
+ color:#fff;
+ border-radius:3px;
+ -webkit-border-radius:3px;
+ -moz-border-radius:3px;
+}
+
+ul.playlist li:hover {
+ background-color:#eee;
+}
+
+ul.playlist li:hover a {
+ color:#333;
+}
+
+ul.playlist li.sm2_playing,
+ul.playlist li.sm2_playing:hover {
+ background:#6699cc;
+}
+
+ul.playlist li.sm2_paused {
+ background:#999;
+}
+
+ul.playlist li.sm2_playing:hover a,
+ul.playlist li.sm2_paused a {
+ color:#fff;
+}
+
+ul.playlist li .controls {
+ display:none;
+}
+
+ul.playlist li.sm2_playing .controls,
+ul.playlist li.sm2_paused .controls {
+ position:relative;
+ display:block;
+}
+
+ul.playlist li.sm2_paused .controls {
+ background:#666;
+}
+
+ul.playlist li:hover .controls .statusbar {
+ background:#5588bb;
+}
+
+ul.playlist li.sm2_paused:hover .controls .statusbar {
+ background:#999;
+}
+
+ul.playlist li .controls {
+ position:relative;
+ margin-top:0.25em;
+ margin-bottom:0.25em;
+ background:#99ccff;
+}
+
+ul.playlist li .controls .statusbar {
+ position:relative;
+ height:0.5em;
+ background:#ccddff;
+ border:2px solid #fff;
+ border-radius:2px;
+ -moz-border-radius:2px;
+ -webkit-border-radius:2px;
+ overflow:hidden;
+}
+
+ul.playlist li .controls .statusbar .position,
+ul.playlist li .controls .statusbar .loading {
+ position:absolute;
+ left:0px;
+ top:0px;
+ height:0.5em;
+}
+
+ul.playlist li .controls .statusbar .position {
+ background-color:#336699;
+ border-right:3px solid #336699;
+ border-radius:3px;
+ -moz-border-radius:3px;
+ -webkit-border-radius:3px;
+}
+
+ul.playlist li.sm2_paused .controls .statusbar .position {
+ background:#666;
+ border-color:#666;
+}
+
+ul.playlist li .controls .statusbar .loading {
+ background:#eee;
+}
+
+ul.playlist li .controls .statusbar .position,
+ul.playlist li .controls .statusbar .loading {
+ width:0px;
+}
+
+ul.playlist li .timing {
+ position:absolute;
+ display:none;
+ text-align:right;
+ right:1em;
+ top:1em;
+ width:auto;
+ height:1em;
+ padding:4px 5px 3px 5px;
+ background:#5588bb;
+ border:1px solid #99ccff;
+ -moz-border-radius:6px;
+ -khtml-border-radius:6px;
+ border-radius:6px;
+ letter-spacing:0px;
+ font:small normal "lucida console",monaco,courier,terminal,system;
+ line-height:1em;
+}
+
+ul.playlist li:hover .timing {
+ z-index:2;
+}
+
+ul.playlist li .timing div.sm2_timing {
+ margin:0px;
+ padding:0px;
+ margin-top:-1em;
+}
+
+ul.playlist li.sm2_playing .timing,
+ul.playlist li.sm2_paused .timing {
+ display:block;
+}
+
+ul.playlist li.sm2_paused .timing .sm2_position {
+ text-decoration:blink; /* hee hee. first actual appropriate use? :D */
+}
+
+ul.playlist li.sm2_paused .timing {
+ background:#888;
+ border:1px solid #ccc;
+}
+
+#control-template {
+ display:none;
+}
+
+
+/* DarkX-Studios Theme */
+
+ul.playlist.darkx li.sm2_paused {
+ background:#d7d0c8;
+}
+
+ul.playlist.darkx li.sm2_playing,
+ul.playlist.darkx li.sm2_playing:hover {
+
+ 	background-color: #C5BBAF;
+}
+
+ul.playlist.darkx li .controls {
+ background:transparent;
+}
+
+ul.playlist.darkx li .controls .statusbar {
+	border-color:#fff;
+	background-color: #FFFFFF;
+}
+
+ul.playlist.darkx li .controls .statusbar .position {
+	background-color:#666666;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-right-width: 3px;
+	border-right-style: solid;
+	border-right-color: #999999;
+}
+
+ul.playlist.darkx li .controls .statusbar .loading {
+	background-color: #ff9000;
+}
+
+ul.playlist.darkx li .timing {
+	background-color: #CCCCCC;
+	border-color:#FFFFFF;
+	color: #FFFFFF;
+}
+
